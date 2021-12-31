@@ -26,13 +26,6 @@ class Utils {
         case "integer": {
           return Utils.makeRandomInt(99999, -99999);
         }
-        case "array": {
-          return this.makeArray(); //need tyest keys
-        }
-
-        case "object": {
-          return this.makeObject(); //need tyest keys
-        }
       }
     });
     return array;
@@ -58,16 +51,6 @@ class Utils {
         case "integer":
           {
             Obj[item] = Utils.makeRandomInt(99999, -99999);
-          }
-          break;
-        case "array":
-          {
-            Obj[item] = this.makeArray(); //need tyest keys
-          }
-          break;
-        case "object":
-          {
-            Obj[item] = this.makeObject(); //need tyest keys
           }
           break;
         default:
