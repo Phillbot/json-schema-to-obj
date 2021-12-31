@@ -17,14 +17,14 @@ class Utils {
     const array = Array.from(Array(length).keys()).map(() => {
       switch (type) {
         case "string": {
-          return Utils.makeRandomString();
+          return this.makeRandomString();
         }
 
         case "number": {
-          return Utils.makeRandomNumber(99999, 0);
+          return this.makeRandomNumber(99999, 0);
         }
         case "integer": {
-          return Utils.makeRandomInt(99999, -99999);
+          return this.makeRandomInt(99999, -99999);
         }
       }
     });
@@ -40,17 +40,17 @@ class Utils {
       switch (type) {
         case "string":
           {
-            Obj[item] = Utils.makeRandomString();
+            Obj[item] = this.makeRandomString();
           }
           break;
         case "number":
           {
-            Obj[item] = Utils.makeRandomNumber(99999, 0);
+            Obj[item] = this.makeRandomNumber(99999, 0);
           }
           break;
         case "integer":
           {
-            Obj[item] = Utils.makeRandomInt(99999, -99999);
+            Obj[item] = this.makeRandomInt(99999, -99999);
           }
           break;
         default:

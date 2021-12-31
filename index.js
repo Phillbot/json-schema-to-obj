@@ -2,7 +2,7 @@ const schema = require("./shema.json");
 const Utils = require("./utils.js");
 const Common = require("./common.js");
 
-const convrter = () => {
+const conveter = () => {
   const object = {};
 
   Object.keys(schema.properties).forEach((key) => {
@@ -50,4 +50,4 @@ const convrter = () => {
   console.log(object);
 };
 
-convrter();
+conveter();
